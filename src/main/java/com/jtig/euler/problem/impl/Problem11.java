@@ -140,7 +140,7 @@ public class Problem11 implements Problem {
             }
         }
 
-        System.out.println(biggest);
+        System.out.println("Problem 11: " + biggest);
         return biggest;
     }
 

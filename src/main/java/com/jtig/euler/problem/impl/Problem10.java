@@ -29,7 +29,7 @@ public class Problem10 implements Problem {
         final Set<Integer> set = new HashSet<>();
 
         final int bigNumber = 2000000;
-        for (int i = 1; i < bigNumber; i++) {
+        for (int i = 2; i < bigNumber; i++) {
             set.add(i);
         }
 
@@ -50,8 +50,7 @@ public class Problem10 implements Problem {
             sum += i;
         }
 
-        System.out.println(sum);
-        System.out.println(Long.MAX_VALUE);
+        System.out.println("Problem 10: " + sum);
         return sum;
     }
 
