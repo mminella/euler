@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  web:
+    image: jtig-euler:latest
+    ports:
+      - "8080:8080"

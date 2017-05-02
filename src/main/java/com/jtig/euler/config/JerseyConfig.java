@@ -1,5 +1,6 @@
 package com.jtig.euler.config;
 
+import com.jtig.euler.service.EulerService;
 import io.swagger.jaxrs.config.BeanConfig;
 import io.swagger.jaxrs.listing.ApiListingResource;
 import io.swagger.jaxrs.listing.SwaggerSerializers;
@@ -11,11 +12,11 @@ import javax.ws.rs.ApplicationPath;
 
 @Component
 @ApplicationPath("api")
-//@ComponentScan({"com.jtig.euler.config"})
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig() {
         packages("com.jtig.euler");
+//        register(EulerService.class);
         configureSwagger();
     }
 
